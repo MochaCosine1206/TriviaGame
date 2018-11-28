@@ -1,0 +1,35 @@
+body {
+    background-color: #ffd0cb;
+    color: #406ddb;
+    font-family: europa, brandon-grotesque, helvetica, Arial, sans-serif;
+}
+
+.section {
+    padding: 10px;
+    box-sizing: content-box;
+    position: absolute;
+    height: 400px;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    border: 3px solid #406ddb;
+}
+
+.questionNum {
+    font-size: 40px;
+}
+
+.questionQ {
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 25px;
+    
+}
+
+li {
+    border: 1px solid #406ddb;
+    margin-top: 10px;
+}
