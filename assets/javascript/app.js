@@ -1,6 +1,6 @@
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -17,7 +17,7 @@ $(document).ready(function(){
             $(".answer3").html(getObj.results[randomQ].incorrect_answers[1]);
             $(".answer4").html(getObj.results[randomQ].incorrect_answers[2]);
 
-            $("li").on("click", function(){
+            $("li").on("click", function () {
                 if ($(this).html() === getObj.results[randomQ].correct_answer) {
                     //points++
                     newQuestion();
@@ -32,11 +32,11 @@ $(document).ready(function(){
             function newQuestion() {
                 var randomQ = Math.floor(Math.random() * getObj.results.length);
                 $("#testID").html(getObj.results[randomQ].category);
-            $(".questionQ").html(getObj.results[randomQ].question);
-            $(".answer1").html(getObj.results[randomQ].correct_answer);
-            $(".answer2").html(getObj.results[randomQ].incorrect_answers[0]);
-            $(".answer3").html(getObj.results[randomQ].incorrect_answers[1]);
-            $(".answer4").html(getObj.results[randomQ].incorrect_answers[2]);
+                $(".questionQ").html(getObj.results[randomQ].question);
+                $(".answer1").html(getObj.results[randomQ].correct_answer);
+                $(".answer2").html(getObj.results[randomQ].incorrect_answers[0]);
+                $(".answer3").html(getObj.results[randomQ].incorrect_answers[1]);
+                $(".answer4").html(getObj.results[randomQ].incorrect_answers[2]);
             }
         }
     };
