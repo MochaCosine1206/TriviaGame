@@ -1,7 +1,61 @@
+
 body {
     background-color: #ffd0cb;
     color: #406ddb;
-    font-family: europa, brandon-grotesque, helvetica, Arial, sans-serif;
+    font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+}
+
+.logo {
+    font-family: "duos-paint",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 61px;
+}
+
+.splashScreen, .selectionScreen, .playScreen{
+    display: none;
+}
+
+.logoSplash {
+    font-family: "duos-paint",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 193px;
+}
+
+.selectionScreen {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 43px;
+
+}
+
+#category, #difficulty {
+    background-color: #406ddb;
+    color: #ffd0cb;
+}
+
+.playButton {
+    font-family: "duos-paint",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    bottom: -20%;
+    right: 36%;
+    background-color: #406ddb;
+    border: 3px solid #ffd0cb;
+    color: #ffd0cb;
+    font-size: 47px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 16px;
+    width: 285px;
+    height: 101px;
+    z-index: 5;
 }
 
 .section {
@@ -70,9 +124,40 @@ li {
 
 text { 
     font-size: 40px;
-    font-family: europa, brandon-grotesque, helvetica, Arial, sans-serif;
+    font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 19px;
     fill: #406ddb;
+  }
+
+  @media only screen and (max-width:  937px) {
+    svg {
+        position: absolute;
+        top: -36px;
+        left: 116px;
+        width: 170px;
+        height: 170px;
+        z-index: 3;
+    }
+
+    .wins {
+    /* display: none; */
+    position: absolute;
+    top: 7px;
+    left: 161px;
+    background-color: #406ddb;
+    border: 3px solid #ffd0cb;
+    color: #ffd0cb;
+    font-size: 33px;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 89px;
+    padding: 16px;
+    width: 41px;
+    height: 40px;
+    box-shadow: -10px 10px 10px grey;
+    z-index: 5;
+    }
+
   }

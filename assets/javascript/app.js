@@ -9,6 +9,11 @@ var randomLine = 0;
 var points = 0;
 
 $(document).ready(function () {
+    $(".splashScreen").fadeIn(1000).delay(2000);
+    $(".logoSplash").fadeIn(2000).delay(1000);
+    $(".logoSplash").fadeOut(2000).delay(1000);
+    $(".playScreen").delay(3000).fadeIn(2000)
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -125,7 +130,7 @@ $(document).ready(function () {
 
         }
     };
-    xhttp.open("GET", "https://opentdb.com/api.php?amount=10", true);
+    xhttp.open("GET", "https://opentdb.com/api.php?amount=50", true);
     xhttp.send();
 })
 
