@@ -12,8 +12,18 @@ body {
     font-size: 61px;
 }
 
-.splashScreen, .selectionScreen, .playScreen{
+.splashScreen, .selectionScreen, .playScreen, .gameOverScreen{
     display: none;
+}
+
+select {
+    font-size: 43px;
+    appearance: none;
+    color: #ffd0cb;
+    background-color: #406ddb;
+    font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+    width: auto;
+    border: none;
 }
 
 .logoSplash {
@@ -26,20 +36,35 @@ body {
     font-size: 193px;
 }
 
-.selectionScreen {
+.selectionScreen, .gameOverScreen {
     position: absolute;
-    top: 30%;
+    top: 19%;
     left: 10%;
     font-size: 43px;
 
 }
 
-#category, #difficulty {
+.winsGameOver {
+    /* display: none;  */
+    position: absolute;
+    top: -3px;
+    left: 244px;
     background-color: #406ddb;
+    border: 3px solid #ffd0cb;
     color: #ffd0cb;
+    font-size: 82px;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 89px;
+    padding: 16px;
+    width: 124px;
+    height: 124px;
+    box-shadow: -10px 10px 10px grey;
+    z-index: 5;
 }
 
-.playButton {
+
+.playButton, .playAgainButton {
     font-family: "duos-paint",sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -57,6 +82,24 @@ body {
     height: 101px;
     z-index: 5;
 }
+.playAgainButton {
+    font-family: "duos-paint",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    bottom: 9%;
+    right: 16%;
+    background-color: #406ddb;
+    border: 3px solid #ffd0cb;
+    color: #ffd0cb;
+    font-size: 54px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 16px;
+    width: 389px;
+    height: 121px;
+    z-index: 5;
+}
 
 .section {
     padding: 10px;
@@ -70,6 +113,18 @@ body {
     z-index: 4;
     background-color: #ffd0cb;
 }
+
+.gameOverSection {
+    padding: 10px;
+    box-sizing: content-box;
+    position: absolute;
+    height: 400px;
+    top: 27px;
+    left: 84px;
+    width: 600px;
+    z-index: 4;
+    background-color: #ffd0cb;
+}
 .wins {
     /* display: none; */
     position: absolute;
@@ -78,13 +133,13 @@ body {
     background-color: #406ddb;
     border: 3px solid #ffd0cb;
     color: #ffd0cb;
-    font-size: 80px;
+    font-size: 82px;
     text-align: center;
     box-sizing: content-box;
     border-radius: 89px;
-    padding: 15px;
-    width: 119px;
-    height: 116px;
+    padding: 16px;
+    width: 124px;
+    height: 124px;
     box-shadow: -10px 10px 10px grey;
     z-index: 5;
 }
@@ -93,6 +148,14 @@ svg {
     position: absolute;
     top: -157px;
     left: 491px;
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+}
+.gameOverSVG {
+    position: absolute;
+    top: -165px;
+    left: 76px;
     width: 500px;
     height: 500px;
     z-index: 3;
@@ -128,6 +191,15 @@ text {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 19px;
+    fill: #406ddb;
+  }
+
+  .winText {
+    font-size: 22px;
+    font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 12px;
     fill: #406ddb;
   }
 

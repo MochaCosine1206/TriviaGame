@@ -18,8 +18,36 @@
         <div class="logoSplash">Triv.</div>
     </div>
     <div class="selectionScreen">
-        <h4>Hit me up with that <span id="category">General Knowledge</span> stuff!</h4>
-        <h4>And make it <span id="Difficulty">Difficulty</span>.</h4>
+        <h4>Hit me up with that<br><span id="category">
+                <select id="categorySelect">
+                    <option>Pick a Category</option>
+                    <option>Any Category</option>
+                    <option>General Knowledge</option>
+                    <option>Entertainment: Books</option>
+                    <option>Entertainment: Film</option>
+                    <option>Entertainment: Music</option>
+                    <option>Entertainment: Musicals & Theatres</option>
+                    <option>Entertainment: Television</option>
+                    <option>Entertainment: Video Games</option>
+                    <option>Entertainment: Board Games</option>
+                    <option>Science & Nature</option>
+                    <option>Science: Computers</option>
+                    <option>Science: Mathmatics</option>
+                    <option>Mythology</option>
+                    <option>Sports</option>
+                    <option>Geography</option>
+                    <option>History</option>
+                    <option>Politics</option>
+                    <option>Art</option>
+                    <option>Celebrities</option>
+                    <option>Animals</option>
+                    <option>Vehicles</option>
+                    <option>Entertainment: Comics</option>
+                    <option>Science: Gadgets</option>
+                    <option>Entertainment: Japanese Anime & Manga</option>
+                    <option>Entertainment: Cartoon & Animations</option>
+                </select>
+            <br></span>stuff!</h4>
         <button class="playButton">Play Triv.</button>
     </div>
     <div class="playScreen">
@@ -34,7 +62,7 @@
                 </path>
             </defs>
             <text dy="70" textLength="800">
-                <textPath xlink:href="#textcircle" id="testID">Red Hot Chilli Peppers</textPath>
+                <textPath xlink:href="#textcircle" id="testID"></textPath>
             </text>
         </svg>
         <div class="wins">0</div>
@@ -51,6 +79,24 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="gameOverScreen">
+            <div class="gameOverSection">
+                <svg class="gameOverSVG" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                    <title>Category ring</title>
+                    <defs>
+                        <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
+                            <animateTransform attributeName="transform" begin="0s" dur="30s" type="rotate" from="0 250 250" to="360 250 250"
+                                repeatCount="indefinite" />
+                        </path>
+                    </defs>
+                    <text dy="70" textLength="800">
+                        <textPath xlink:href="#textcircle" class="winText">Congratulations!  Out of 50 questions correct!</textPath>
+                    </text>
+                </svg>
+                    <div class="winsGameOver">0</div><br>
+                <button class="playAgainButton">Play Again!</button>
+            </div>
     </div>
 
 </body>
