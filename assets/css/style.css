@@ -12,7 +12,7 @@ body {
     font-size: 61px;
 }
 
-.splashScreen, .selectionScreen, .playScreen, .gameOverScreen{
+ .selectionScreen, .playScreen, .gameOverScreen{
     display: none;
 }
 
@@ -40,15 +40,15 @@ select {
     position: absolute;
     top: 19%;
     left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 43px;
-
 }
 
 .winsGameOver {
-    /* display: none;  */
     position: absolute;
-    top: -3px;
-    left: 244px;
+    top: 0px;
+    left: 251px;
     background-color: #406ddb;
     border: 3px solid #ffd0cb;
     color: #ffd0cb;
@@ -56,9 +56,11 @@ select {
     text-align: center;
     box-sizing: content-box;
     border-radius: 89px;
-    padding: 16px;
-    width: 124px;
-    height: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 148px;
+    height: 148px;
+    line-height: 143px;
     box-shadow: -10px 10px 10px grey;
     z-index: 5;
 }
@@ -126,28 +128,29 @@ select {
     background-color: #ffd0cb;
 }
 .wins {
-    /* display: none; */
     position: absolute;
     top: 10px;
-    left: 669px;
+    left: 687px;
     background-color: #406ddb;
     border: 3px solid #ffd0cb;
     color: #ffd0cb;
-    font-size: 82px;
+    font-size: 55px;
     text-align: center;
     box-sizing: content-box;
     border-radius: 89px;
-    padding: 16px;
-    width: 124px;
-    height: 124px;
+    width: 145px;
+    height: 145px;
+    line-height: 142px;
     box-shadow: -10px 10px 10px grey;
     z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 svg {
     position: absolute;
-    top: -157px;
-    left: 491px;
+    top: -161px;
+    left: 503px;
     width: 500px;
     height: 500px;
     z-index: 3;
@@ -180,7 +183,8 @@ ul {
 li {
     border: 1px solid #406ddb;
     margin-top: 10px;
-    width: 50%;
+    margin-left: -39px;
+    margin-right: auto;
     padding-left: 20px;
     border-radius: 15px;
 }
@@ -214,22 +218,75 @@ text {
     }
 
     .wins {
-    /* display: none; */
-    position: absolute;
-    top: 7px;
-    left: 161px;
-    background-color: #406ddb;
-    border: 3px solid #ffd0cb;
-    color: #ffd0cb;
-    font-size: 33px;
-    text-align: center;
-    box-sizing: content-box;
-    border-radius: 89px;
-    padding: 16px;
-    width: 41px;
-    height: 40px;
-    box-shadow: -10px 10px 10px grey;
-    z-index: 5;
+        position: absolute;
+        top: 11px;
+        left: 166px;
+        background-color: #406ddb;
+        border: 3px solid #ffd0cb;
+        color: #ffd0cb;
+        font-size: 21px;
+        text-align: center;
+        box-sizing: content-box;
+        border-radius: 89px;
+        width: 66px;
+        line-height: 67px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 66px;
+        box-shadow: -10px 10px 10px grey;
+        z-index: 5;
+    }
+
+    .winsGameOver {
+        position: absolute;
+        top: 0px;
+        left: 251px;
+        background-color: #406ddb;
+        border: 3px solid #ffd0cb;
+        color: #ffd0cb;
+        font-size: 82px;
+        text-align: center;
+        box-sizing: content-box;
+        border-radius: 89px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 148px;
+        height: 148px;
+        line-height: 143px;
+        box-shadow: -10px 10px 10px grey;
+        z-index: 5;
+    }
+
+    .selectionScreen, .gameOverScreen {
+        position: absolute;
+        top: 19%;
+        left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 34px;
+    }
+
+    select {
+        font-size: 34px;
+        appearance: none;
+        color: #ffd0cb;
+        background-color: #406ddb;
+        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+        width: auto;
+        border: none;
+    }
+
+    .logoSplash {
+        font-family: "duos-paint",sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 26%;
+        left: 27%;
+        font-size: 193px;
     }
 
   }
+

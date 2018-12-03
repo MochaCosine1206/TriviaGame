@@ -217,7 +217,7 @@ $(document).ready(function () {
 
         $("#categorySelect").on("change", function () {
             categoryText = $("#categorySelect option:selected").text();
-            if (categoryText === "Any Category") {
+            if (categoryText === "Random") {
                 xhttp.open("GET", categoryAny, true);
                 xhttp.send();
             }
