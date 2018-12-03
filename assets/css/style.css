@@ -325,16 +325,16 @@ text {
 
   }
 
-  @media only screen and (max-width:  812px) {
+  @media only screen and (max-width:  824px) {
 
     .section {
         padding: 10px;
         box-sizing: content-box;
         position: absolute;
-        height: 225px;
-        width: 511px;
+        height: 60%;
         top: 94px;
-        left: 10%;
+        left: 7%;
+        width: 80%;
         border: 3px solid #406ddb;
         z-index: 4;
         background-color: #ffd0cb;
