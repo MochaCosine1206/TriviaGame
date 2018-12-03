@@ -225,9 +225,8 @@ $(document).ready(function () {
     selectCategory();
     function selectCategory() {
 
-        $("#categorySelect").on("change", function () {
-            categoryText = $("#categorySelect option:selected").text();
-            if (categoryText === "Random") {
+        $(".playbutton").on("click", function () {
+            if ($("#categorySelect option:selected").text() === "Pick a Category") {
                 xhttp.open("GET", categoryAny, true);
                 xhttp.send();
             }

@@ -323,3 +323,69 @@ text {
 
   }
 
+  @media only screen and (max-width:  709px) {
+
+
+    .winsGameOver {
+        position: absolute;
+        top: 0px;
+        left: 251px;
+        background-color: #406ddb;
+        border: 3px solid #ffd0cb;
+        color: #ffd0cb;
+        font-size: 82px;
+        text-align: center;
+        box-sizing: content-box;
+        border-radius: 89px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 148px;
+        height: 148px;
+        line-height: 143px;
+        box-shadow: -10px 10px 10px grey;
+        z-index: 5;
+    }
+
+    .selectionScreen, .gameOverScreen {
+        position: absolute;
+        top: 19%;
+        left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 34px;
+    }
+
+    select {
+        font-size: 34px;
+        appearance: none;
+        color: #ffd0cb;
+        background-color: #406ddb;
+        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+        width: auto;
+        border: none;
+    }
+
+    select:hover {
+        font-size: 34px;
+        appearance: none;
+        color: #fcaca4;
+        background-color: #527add;
+        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+        width: auto;
+        border: none;
+    }
+
+    .logoSplash {
+        font-family: "duos-paint",sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 26%;
+        left: 27%;
+        font-size: 193px;
+    }
+
+  }
+
