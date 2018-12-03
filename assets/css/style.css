@@ -26,6 +26,16 @@ select {
     border: none;
 }
 
+select:hover {
+    font-size: 43px;
+    appearance: none;
+    color: #fcaca4;
+    background-color: #7392df;
+    font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+    width: auto;
+    border: none;
+}
+
 .logoSplash {
     font-family: "duos-paint",sans-serif;
     font-weight: 900;
@@ -66,7 +76,7 @@ select {
 }
 
 
-.playButton, .playAgainButton {
+.playButton {
     font-family: "duos-paint",sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -82,7 +92,13 @@ select {
     padding: 16px;
     width: 285px;
     height: 101px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
     z-index: 5;
+    outline: none;
+}
+
+.playButton:hover, .playAgainButton:hover{
+    box-shadow: 8px 15px 5px rgba(0, 0, 0, 0.15);
 }
 .playAgainButton {
     font-family: "duos-paint",sans-serif;
@@ -100,7 +116,9 @@ select {
     padding: 16px;
     width: 389px;
     height: 121px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
     z-index: 5;
+    outline: none;
 }
 
 .section {
@@ -182,11 +200,16 @@ ul {
 
 li {
     border: 1px solid #406ddb;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-left: -39px;
     margin-right: auto;
     padding-left: 20px;
     border-radius: 15px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.19);
+}
+
+li:hover {
+    background-image: linear-gradient(to right, rgb(253, 224, 224), #ffd0cb );
 }
 
 text { 
@@ -271,6 +294,16 @@ text {
         appearance: none;
         color: #ffd0cb;
         background-color: #406ddb;
+        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+        width: auto;
+        border: none;
+    }
+
+    select:hover {
+        font-size: 34px;
+        appearance: none;
+        color: #fcaca4;
+        background-color: #527add;
         font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
         width: auto;
         border: none;

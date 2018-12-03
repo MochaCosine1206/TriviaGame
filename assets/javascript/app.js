@@ -44,7 +44,11 @@ $(document).ready(function () {
     $(".logoSplash").fadeIn(2000).delay(1000);
     $(".logoSplash").fadeOut(1000).delay(1000);
     $(".selectionScreen").delay(2000).fadeIn(2000);
-    $(".playButton").on("click", function () {
+    $(".playButton").on("mousedown", function(){
+        $(this).css('box-shadow', '1px 5px 2px rgba(0, 0, 0, 0.4)');
+    });
+    $(".playButton").on("mouseup", function () {
+        $(this).css('box-shadow', '5px 10px 5px rgba(0, 0, 0, 0.19)');
         $(".selectionScreen").fadeOut(1000).delay(1000);
         $(".playScreen").delay(2000).fadeIn(2000);
     })
@@ -115,17 +119,19 @@ $(document).ready(function () {
             $("li:nth-child(" + answerArr[3] + ")").html(getObj.results[randArr[randArrCount]].incorrect_answers[2]);
 
 
-
-            $("li").on("click", function () {
+            $("li").on("mousedown", function(){
+                $(this).css('box-shadow', '1px 3px 0px rgba(0, 0, 0, 0.4)');
+                
+            })
+            $("li").on("mouseup", function () {
+                $(this).css('box-shadow', '2px 5px 3px rgba(0, 0, 0, 0.19)');
                 if ($(this).html() === getObj.results[randArr[randArrCount]].correct_answer) {
-                    // console.log(randomLine);
                     points++;
                     questionsCount++;
                     $(".wins").html(points + "/" + questionsCount);
                     randArrCount++;
                     newQuestion();
                 } else {
-                    // console.log(randomLine);
                     questionsCount++;
                     randArrCount++;
                     $(".wins").html(points + "/" + questionsCount);
@@ -164,7 +170,11 @@ $(document).ready(function () {
                     $(".winsGameOver").html(points);
                     $(".playScreen").fadeOut(1000).delay(1000);
                     $(".gameOverScreen").delay(1000).fadeIn(2000);
-                    $(".playAgainButton").on("click", function () {
+                    $(".playAgainButton").on("mousedown", function () {
+                        $(this).css('box-shadow', '1px 5px 2px rgba(0, 0, 0, 0.4)');
+                    })
+                    $(".playAgainButton").on("mouseup", function () {
+                        $(this).css('box-shadow', '5px 10px 5px rgba(0, 0, 0, 0.19)');
                         $("#categorySelect").prop('selectedIndex', 0);
                         $(".gameOverScreen").fadeOut(1000).delay(1000);
                         $(".selectionScreen").delay(2000).fadeIn(2000);
