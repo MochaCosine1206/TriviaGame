@@ -231,6 +231,14 @@ $(document).ready(function () {
                 xhttp.send();
             }
         })
+
+        $("#categorySelect").on("change", function () {
+            categoryText = $("#categorySelect option:selected").text();
+            if (categoryText === "Random") {
+                xhttp.open("GET", categoryAny, true);
+                xhttp.send();
+            }
+        })
         $("#categorySelect").on("change", function () {
             categoryText = $("#categorySelect option:selected").text();
             if (categoryText === "General Knowledge") {

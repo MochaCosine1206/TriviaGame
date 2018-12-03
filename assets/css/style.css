@@ -260,6 +260,8 @@ text {
         z-index: 5;
     }
 
+    
+
     .winsGameOver {
         position: absolute;
         top: 0px;
@@ -282,8 +284,8 @@ text {
 
     .selectionScreen, .gameOverScreen {
         position: absolute;
-        top: 19%;
-        left: 10%;
+        top: 2%;
+        left: 8%;
         margin-left: auto;
         margin-right: auto;
         font-size: 34px;
@@ -323,7 +325,30 @@ text {
 
   }
 
-  @media only screen and (max-width:  709px) {
+  @media only screen and (max-width:  812px) {
+
+    .section {
+        padding: 10px;
+        box-sizing: content-box;
+        position: absolute;
+        height: 225px;
+        width: 511px;
+        top: 94px;
+        left: 10%;
+        border: 3px solid #406ddb;
+        z-index: 4;
+        background-color: #ffd0cb;
+    }
+
+
+    .questionQ {
+        font-size: 17px;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 17px;
+    }
 
 
     .winsGameOver {
@@ -348,15 +373,15 @@ text {
 
     .selectionScreen, .gameOverScreen {
         position: absolute;
-        top: 19%;
-        left: 10%;
+        top: 11%;
+        left: 3%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 34px;
+        font-size: 30px;
     }
 
     select {
-        font-size: 34px;
+        font-size: 27px;
         appearance: none;
         color: #ffd0cb;
         background-color: #406ddb;
@@ -366,13 +391,17 @@ text {
     }
 
     select:hover {
-        font-size: 34px;
+        font-size: 27px;
         appearance: none;
         color: #fcaca4;
         background-color: #527add;
         font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
         width: auto;
         border: none;
+    }
+    .playButton {
+        bottom: -30%;
+        right: 28%;
     }
 
     .logoSplash {
@@ -382,10 +411,201 @@ text {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 26%;
-        left: 27%;
-        font-size: 193px;
+        top: 29%;
+        left: 13%;
+        font-size: 130px;
     }
 
+    @media only screen and (max-width:  414px) {
+
+        .section {
+            padding: 10px;
+            box-sizing: content-box;
+            position: absolute;
+            height: 53%;
+            width: 72%;
+            top: 258px;
+            left: 13%;
+            border: 3px solid #406ddb;
+            z-index: 4;
+            background-color: #ffd0cb;
+        }
+    
+    
+        .questionQ {
+            font-size: 20px;
+        }
+    
+        ul {
+            list-style-type: none;
+            font-size: 18px;
+        }
+
+
+        .winsGameOver {
+            position: absolute;
+            top: 0px;
+            left: 251px;
+            background-color: #406ddb;
+            border: 3px solid #ffd0cb;
+            color: #ffd0cb;
+            font-size: 82px;
+            text-align: center;
+            box-sizing: content-box;
+            border-radius: 89px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 148px;
+            height: 148px;
+            line-height: 143px;
+            box-shadow: -10px 10px 10px grey;
+            z-index: 5;
+        }
+
+        .logo {
+            margin-left: 29%;
+            margin-top: 30px;
+            font-size: 83px;
+        }
+
+        svg {
+            top: 97px;
+        }
+
+        .wins {
+            top: 144px;
+        }
+    
+        .selectionScreen, .gameOverScreen {
+            font-size: 42px;
+        }
+    
+        select {
+            font-size: 31px;
+            width: 80%;
+            margin-left: auto;
+        }
+    
+        select:hover {
+            font-size: 27px;
+            appearance: none;
+            color: #fcaca4;
+            background-color: #527add;
+            font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+            width: auto;
+            border: none;
+        }
+        .playButton {
+            bottom: -39%;
+            left: 2%;
+        }
+    
+        .logoSplash {
+            font-family: "duos-paint",sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
   }
+
+  @media only screen and (max-width:  374px) {
+
+    .section {
+        padding: 10px;
+        box-sizing: content-box;
+        position: absolute;
+        height: 50%;
+        width: 74%;
+        top: 217px;
+        left: 8%;
+        border: 3px solid #406ddb;
+        z-index: 4;
+        background-color: #ffd0cb;
+    }
+
+
+    .questionQ {
+        font-size: 18px;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 15px;
+    }
+
+
+    .winsGameOver {
+        position: absolute;
+        top: 0px;
+        left: 251px;
+        background-color: #406ddb;
+        border: 3px solid #ffd0cb;
+        color: #ffd0cb;
+        font-size: 82px;
+        text-align: center;
+        box-sizing: content-box;
+        border-radius: 89px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 148px;
+        height: 148px;
+        line-height: 143px;
+        box-shadow: -10px 10px 10px grey;
+        z-index: 5;
+    }
+
+    .logo {
+        margin-top: 1%;
+        margin-left: 25%;
+    }
+
+    svg {
+        top: 67px;
+        left: 22%;
+    }
+
+    .wins {
+        top: 111px;
+        left: 39%;
+    }
+
+    .selectionScreen, .gameOverScreen {
+        font-size: 42px;
+    }
+
+    select {
+        font-size: 31px;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    select:hover {
+        font-size: 27px;
+        appearance: none;
+        color: #fcaca4;
+        background-color: #527add;
+        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+        width: auto;
+        border: none;
+    }
+    .playButton {
+        bottom: -39%;
+        left: 2%;
+    }
+
+    .logoSplash {
+        font-family: "duos-paint",sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+ 
 
