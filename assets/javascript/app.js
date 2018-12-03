@@ -11,31 +11,31 @@ var points = 0;
 var questionsCount = 0;
 var categoryText = "";
 var difficultyText = "";
-var categoryAny = "https://opentdb.com/api.php?amount=10";
-var category9 = "https://opentdb.com/api.php?amount=10&category=9";
-var category10 = "https://opentdb.com/api.php?amount=10&category=10";
-var category11 = "https://opentdb.com/api.php?amount=10&category=11";
-var category12 = "https://opentdb.com/api.php?amount=10&category=12";
-var category13 = "https://opentdb.com/api.php?amount=10&category=13";
-var category14 = "https://opentdb.com/api.php?amount=10&category=14";
-var category15 = "https://opentdb.com/api.php?amount=10&category=15";
-var category16 = "https://opentdb.com/api.php?amount=10&category=16";
-var category17 = "https://opentdb.com/api.php?amount=10&category=17";
-var category18 = "https://opentdb.com/api.php?amount=10&category=18";
-var category19 = "https://opentdb.com/api.php?amount=10&category=19";
-var category20 = "https://opentdb.com/api.php?amount=10&category=20";
-var category21 = "https://opentdb.com/api.php?amount=10&category=21";
-var category22 = "https://opentdb.com/api.php?amount=10&category=22";
-var category23 = "https://opentdb.com/api.php?amount=10&category=23";
-var category24 = "https://opentdb.com/api.php?amount=10&category=24";
-var category25 = "https://opentdb.com/api.php?amount=10&category=25";
-var category26 = "https://opentdb.com/api.php?amount=10&category=26";
-var category27 = "https://opentdb.com/api.php?amount=10&category=27";
-var category28 = "https://opentdb.com/api.php?amount=10&category=28";
-var category29 = "https://opentdb.com/api.php?amount=10&category=29";
-var category30 = "https://opentdb.com/api.php?amount=10&category=30";
-var category31 = "https://opentdb.com/api.php?amount=10&category=31";
-var category32 = "https://opentdb.com/api.php?amount=10&category=32";
+var categoryAny = "https://opentdb.com/api.php?amount=50";
+var category9 = "https://opentdb.com/api.php?amount=50&category=9";
+var category10 = "https://opentdb.com/api.php?amount=50&category=10";
+var category11 = "https://opentdb.com/api.php?amount=50&category=11";
+var category12 = "https://opentdb.com/api.php?amount=50&category=12";
+var category13 = "https://opentdb.com/api.php?amount=50&category=13";
+var category14 = "https://opentdb.com/api.php?amount=50&category=14";
+var category15 = "https://opentdb.com/api.php?amount=50&category=15";
+var category16 = "https://opentdb.com/api.php?amount=50&category=16";
+var category17 = "https://opentdb.com/api.php?amount=50&category=17";
+var category18 = "https://opentdb.com/api.php?amount=50&category=18";
+var category19 = "https://opentdb.com/api.php?amount=50&category=19";
+var category20 = "https://opentdb.com/api.php?amount=50&category=20";
+var category21 = "https://opentdb.com/api.php?amount=50&category=21";
+var category22 = "https://opentdb.com/api.php?amount=50&category=22";
+var category23 = "https://opentdb.com/api.php?amount=50&category=23";
+var category24 = "https://opentdb.com/api.php?amount=50&category=24";
+var category25 = "https://opentdb.com/api.php?amount=50&category=25";
+var category26 = "https://opentdb.com/api.php?amount=50&category=26";
+var category27 = "https://opentdb.com/api.php?amount=50&category=27";
+var category28 = "https://opentdb.com/api.php?amount=50&category=28";
+var category29 = "https://opentdb.com/api.php?amount=50&category=29";
+var category30 = "https://opentdb.com/api.php?amount=50&category=30";
+var category31 = "https://opentdb.com/api.php?amount=50&category=31";
+var category32 = "https://opentdb.com/api.php?amount=50&category=32";
 
 
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
 
             function newQuestion() {
-                if (randArrCount === 10) {
+                if (randArrCount === 50) {
                     $(".winsGameOver").html(points);
                     $(".playScreen").fadeOut(1000).delay(1000);
                     $(".gameOverScreen").delay(1000).fadeIn(2000);
