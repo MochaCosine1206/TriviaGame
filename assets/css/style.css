@@ -237,50 +237,18 @@ text {
         left: 116px;
         width: 170px;
         height: 170px;
-        z-index: 3;
     }
 
     .wins {
-        position: absolute;
         top: 11px;
         left: 166px;
-        background-color: #406ddb;
-        border: 3px solid #ffd0cb;
-        color: #ffd0cb;
         font-size: 21px;
-        text-align: center;
-        box-sizing: content-box;
         border-radius: 89px;
         width: 66px;
         line-height: 67px;
-        margin-left: auto;
-        margin-right: auto;
         height: 66px;
-        box-shadow: -10px 10px 10px grey;
-        z-index: 5;
     }
 
-    
-
-    .winsGameOver {
-        position: absolute;
-        top: 0px;
-        left: 251px;
-        background-color: #406ddb;
-        border: 3px solid #ffd0cb;
-        color: #ffd0cb;
-        font-size: 82px;
-        text-align: center;
-        box-sizing: content-box;
-        border-radius: 89px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 148px;
-        height: 148px;
-        line-height: 143px;
-        box-shadow: -10px 10px 10px grey;
-        z-index: 5;
-    }
 
     .selectionScreen, .gameOverScreen {
         position: absolute;
@@ -293,34 +261,17 @@ text {
 
     select {
         font-size: 34px;
-        appearance: none;
-        color: #ffd0cb;
-        background-color: #406ddb;
-        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-        width: auto;
-        border: none;
     }
 
     select:hover {
         font-size: 34px;
-        appearance: none;
-        color: #fcaca4;
-        background-color: #527add;
-        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-        width: auto;
-        border: none;
     }
 
     .logoSplash {
-        font-family: "duos-paint",sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        position: absolute;
         margin-left: auto;
         margin-right: auto;
         top: 26%;
         left: 27%;
-        font-size: 193px;
     }
 
   }
@@ -328,16 +279,9 @@ text {
   @media only screen and (max-width:  824px) {
 
     .section {
-        padding: 10px;
-        box-sizing: content-box;
-        position: absolute;
         height: 60%;
-        top: 94px;
         left: 7%;
         width: 80%;
-        border: 3px solid #406ddb;
-        z-index: 4;
-        background-color: #ffd0cb;
     }
 
 
@@ -346,67 +290,26 @@ text {
     }
 
     ul {
-        list-style-type: none;
         font-size: 17px;
     }
 
 
-    .winsGameOver {
-        position: absolute;
-        top: 0px;
-        left: 251px;
-        background-color: #406ddb;
-        border: 3px solid #ffd0cb;
-        color: #ffd0cb;
-        font-size: 82px;
-        text-align: center;
-        box-sizing: content-box;
-        border-radius: 89px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 148px;
-        height: 148px;
-        line-height: 143px;
-        box-shadow: -10px 10px 10px grey;
-        z-index: 5;
-    }
 
     .gameOverSVG {
-        position: absolute;
         top: -38%;
         left: 20%;
         width: 400px;
         height: 500px;
-        z-index: 3;
     }
 
     .playAgainButton {
-        font-family: "duos-paint",sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        position: absolute;
         bottom: 20%;
         right: 16%;
-        background-color: #406ddb;
-        border: 3px solid #ffd0cb;
-        color: #ffd0cb;
-        font-size: 54px;
-        text-align: center;
-        border-radius: 40px;
-        padding: 16px;
-        width: 389px;
-        height: 121px;
-        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
-        z-index: 5;
-        outline: none;
     }
 
     .selectionScreen,{
-        position: absolute;
         top: 11%;
         left: 3%;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 30px;
     }
 
@@ -414,22 +317,10 @@ text {
 
     select {
         font-size: 27px;
-        appearance: none;
-        color: #ffd0cb;
-        background-color: #406ddb;
-        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-        width: auto;
-        border: none;
     }
 
     select:hover {
         font-size: 27px;
-        appearance: none;
-        color: #fcaca4;
-        background-color: #527add;
-        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-        width: auto;
-        border: none;
     }
     .playButton {
         bottom: -30%;
@@ -437,12 +328,6 @@ text {
     }
 
     .logoSplash {
-        font-family: "duos-paint",sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
         top: 29%;
         left: 13%;
         font-size: 130px;
@@ -451,16 +336,10 @@ text {
     @media only screen and (max-width:  414px) {
 
         .section {
-            padding: 10px;
-            box-sizing: content-box;
-            position: absolute;
             height: 53%;
             width: 72%;
             top: 258px;
             left: 13%;
-            border: 3px solid #406ddb;
-            z-index: 4;
-            background-color: #ffd0cb;
         }
     
     
@@ -469,69 +348,40 @@ text {
         }
     
         ul {
-            list-style-type: none;
             font-size: 18px;
         }
 
         .gameOverSection {
-            padding: 10px;
-            box-sizing: content-box;
-            position: absolute;
             height: 850px;
             top: 10%;
             left: 10%;
             width: 467px;
-            z-index: 4;
-            background-color: #ffd0cb;
         }
 
         .gameOverSVG {
-            position: absolute;
             top: 0%;
             left: -18%;
             width: 500px;
             height: 500px;
-            z-index: 3;
         }
         .winsGameOver {
-            position: absolute;
             top: 16%;
             left: 12%;
-            background-color: #406ddb;
-            border: 3px solid #ffd0cb;
-            color: #ffd0cb;
             font-size: 144px;
-            text-align: center;
-            box-sizing: content-box;
             border-radius: 188px;
-            margin-left: auto;
-            margin-right: auto;
             width: 208px;
             height: 210px;
             line-height: 202px;
-            box-shadow: -10px 10px 10px grey;
-            z-index: 5;
         }
 
         .playAgainButton {
-            font-family: "duos-paint",sans-serif;
-            font-weight: 900;
-            font-style: normal;
-            position: absolute;
             bottom: 31%;
             right: 30%;
-            background-color: #406ddb;
-            border: 3px solid #ffd0cb;
-            color: #ffd0cb;
             font-size: 47px;
-            text-align: center;
             border-radius: 40px;
             padding: 16px;
             width: 346px;
             height: 121px;
-            box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
-            z-index: 5;
-            outline: none;
         }
 
         .logo {
@@ -560,42 +410,22 @@ text {
     
         select:hover {
             font-size: 27px;
-            appearance: none;
-            color: #fcaca4;
-            background-color: #527add;
-            font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-            width: auto;
-            border: none;
         }
         .playButton {
             bottom: -39%;
             left: 2%;
         }
     
-        .logoSplash {
-            font-family: "duos-paint",sans-serif;
-            font-weight: 900;
-            font-style: normal;
-            position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
   }
 
   @media only screen and (max-width:  374px) {
 
     .section {
-        padding: 10px;
-        box-sizing: content-box;
-        position: absolute;
         height: 50%;
         width: 74%;
         top: 217px;
         left: 8%;
-        border: 3px solid #406ddb;
-        z-index: 4;
-        background-color: #ffd0cb;
     }
 
 
@@ -610,32 +440,20 @@ text {
 
 
     .winsGameOver {
-        position: absolute;
         top: 127px;
         left: 66px;
-        background-color: #406ddb;
-        border: 3px solid #ffd0cb;
-        color: #ffd0cb;
         font-size: 124px;
-        text-align: center;
-        box-sizing: content-box;
         border-radius: 176px;
-        margin-left: auto;
-        margin-right: auto;
         width: 200px;
         height: 200px;
         line-height: 187px;
-        box-shadow: -10px 10px 10px grey;
-        z-index: 5;
     }
 
     .gameOverSVG {
-        position: absolute;
         top: -1%;
         left: -18%;
         width: 500px;
         height: 500px;
-        z-index: 3;
     }
 
     .logo {
@@ -665,25 +483,10 @@ text {
 
     select:hover {
         font-size: 27px;
-        appearance: none;
-        color: #fcaca4;
-        background-color: #527add;
-        font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
-        width: auto;
-        border: none;
     }
     .playButton {
         bottom: -39%;
         left: 2%;
-    }
-
-    .logoSplash {
-        font-family: "duos-paint",sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 }
