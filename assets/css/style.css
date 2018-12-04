@@ -342,7 +342,7 @@ text {
 
 
     .questionQ {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     ul {
@@ -371,7 +371,37 @@ text {
         z-index: 5;
     }
 
-    .selectionScreen, .gameOverScreen {
+    .gameOverSVG {
+        position: absolute;
+        top: -38%;
+        left: 20%;
+        width: 400px;
+        height: 500px;
+        z-index: 3;
+    }
+
+    .playAgainButton {
+        font-family: "duos-paint",sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        bottom: 20%;
+        right: 16%;
+        background-color: #406ddb;
+        border: 3px solid #ffd0cb;
+        color: #ffd0cb;
+        font-size: 54px;
+        text-align: center;
+        border-radius: 40px;
+        padding: 16px;
+        width: 389px;
+        height: 121px;
+        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
+        z-index: 5;
+        outline: none;
+    }
+
+    .selectionScreen,{
         position: absolute;
         top: 11%;
         left: 3%;
@@ -379,6 +409,8 @@ text {
         margin-right: auto;
         font-size: 30px;
     }
+
+
 
     select {
         font-size: 27px;
@@ -441,25 +473,65 @@ text {
             font-size: 18px;
         }
 
+        .gameOverSection {
+            padding: 10px;
+            box-sizing: content-box;
+            position: absolute;
+            height: 850px;
+            top: 10%;
+            left: 10%;
+            width: 467px;
+            z-index: 4;
+            background-color: #ffd0cb;
+        }
 
+        .gameOverSVG {
+            position: absolute;
+            top: 0%;
+            left: -18%;
+            width: 500px;
+            height: 500px;
+            z-index: 3;
+        }
         .winsGameOver {
             position: absolute;
-            top: 0px;
-            left: 251px;
+            top: 16%;
+            left: 12%;
             background-color: #406ddb;
             border: 3px solid #ffd0cb;
             color: #ffd0cb;
-            font-size: 82px;
+            font-size: 144px;
             text-align: center;
             box-sizing: content-box;
-            border-radius: 89px;
+            border-radius: 188px;
             margin-left: auto;
             margin-right: auto;
-            width: 148px;
-            height: 148px;
-            line-height: 143px;
+            width: 208px;
+            height: 210px;
+            line-height: 202px;
             box-shadow: -10px 10px 10px grey;
             z-index: 5;
+        }
+
+        .playAgainButton {
+            font-family: "duos-paint",sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            position: absolute;
+            bottom: 31%;
+            right: 30%;
+            background-color: #406ddb;
+            border: 3px solid #ffd0cb;
+            color: #ffd0cb;
+            font-size: 47px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 16px;
+            width: 346px;
+            height: 121px;
+            box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.19);
+            z-index: 5;
+            outline: none;
         }
 
         .logo {
@@ -539,22 +611,31 @@ text {
 
     .winsGameOver {
         position: absolute;
-        top: 0px;
-        left: 251px;
+        top: 127px;
+        left: 66px;
         background-color: #406ddb;
         border: 3px solid #ffd0cb;
         color: #ffd0cb;
-        font-size: 82px;
+        font-size: 124px;
         text-align: center;
         box-sizing: content-box;
-        border-radius: 89px;
+        border-radius: 176px;
         margin-left: auto;
         margin-right: auto;
-        width: 148px;
-        height: 148px;
-        line-height: 143px;
+        width: 200px;
+        height: 200px;
+        line-height: 187px;
         box-shadow: -10px 10px 10px grey;
         z-index: 5;
+    }
+
+    .gameOverSVG {
+        position: absolute;
+        top: -1%;
+        left: -18%;
+        width: 500px;
+        height: 500px;
+        z-index: 3;
     }
 
     .logo {
