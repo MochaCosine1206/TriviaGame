@@ -147,7 +147,10 @@ $(document).ready(function () {
             }
 
             function resetGame() {
-                $("li").off("click")
+                $("li").off("click");
+                $("li").off("mousedown");
+                $("li").off("mouseup");
+                $(".playbutton").off("click");
                 getObj = [];
                 randArr = [];
                 randomQ = 0;
