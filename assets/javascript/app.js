@@ -148,6 +148,7 @@ $(document).ready(function () {
 
             function resetGame() {
                 $("li").off("click");
+                $("li").off("tap");
                 $("li").off("mousedown");
                 $("li").off("mouseup");
                 $(".playbutton").off("click");
