@@ -165,6 +165,26 @@ select:hover {
     margin-right: auto;
 }
 
+.timer {
+    position: absolute;
+    top: 105px;
+    left: 777px;
+    background-color: #406ddb;
+    border: 3px solid #ffd0cb;
+    color: #ffd0cb;
+    font-size: 47px;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 89px;
+    width: 145px;
+    height: 145px;
+    line-height: 142px;
+    box-shadow: -10px 10px 10px grey;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 svg {
     position: absolute;
     top: -161px;
@@ -242,6 +262,16 @@ text {
     .wins {
         top: 11px;
         left: 166px;
+        font-size: 21px;
+        border-radius: 89px;
+        width: 66px;
+        line-height: 67px;
+        height: 66px;
+    }
+
+    .timer {
+        top: 11px;
+        left: 265px;
         font-size: 21px;
         border-radius: 89px;
         width: 66px;
@@ -392,10 +422,17 @@ text {
 
         svg {
             top: 97px;
+            left: 13%
         }
 
         .wins {
             top: 144px;
+            left: 27%
+        }
+
+        .timer {
+            top: 144px;
+            left: 63%;
         }
     
         .selectionScreen, .gameOverScreen {
@@ -463,12 +500,17 @@ text {
 
     svg {
         top: 67px;
-        left: 22%;
+        left: 0%;
     }
 
     .wins {
         top: 111px;
-        left: 39%;
+        left: 16%;
+    }
+
+    .timer {
+        top: 111px;
+        left: 61%;
     }
 
     .selectionScreen, .gameOverScreen {
