@@ -3,6 +3,9 @@ body {
     background-color: #ffd0cb;
     color: #406ddb;
     font-family: "europa", "brandon-grotesque", helvetica, Arial, sans-serif;
+    background-image: url("../images/grainygradientorange1.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .logo {
