@@ -146,7 +146,6 @@ select:hover {
     left: 84px;
     width: 600px;
     z-index: 4;
-    background-color: #ffd0cb;
 }
 .wins {
     position: absolute;
@@ -425,7 +424,7 @@ text {
 
         svg {
             top: 97px;
-            left: 13%
+            left: 14%
         }
 
         .wins {
@@ -503,7 +502,7 @@ text {
 
     svg {
         top: 67px;
-        left: 0%;
+        left: 2%;
     }
 
     .wins {

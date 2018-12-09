@@ -207,7 +207,11 @@ $(document).ready(function () {
                 }
 
                 function resetGame() {
-                    clearTimeout(answerDelay);
+                    var answerDelay = setTimeout(function () {
+                        minutes = 4;
+                        seconds = 61;
+                    }, 1000)
+                    // clearTimeout(answerDelay);
                     $("li").off("click");
                     $("li").off("tap");
                     $("li").off("mousedown");
@@ -247,6 +251,7 @@ $(document).ready(function () {
                             $("#categorySelect").prop('selectedIndex', 0);
                             $(".gameOverScreen").fadeOut(1000).delay(1000);
                             $(".selectionScreen").delay(2000).fadeIn(2000);
+                            clearInterval(intervalId);
                             resetGame();
                         })
                     } else {
