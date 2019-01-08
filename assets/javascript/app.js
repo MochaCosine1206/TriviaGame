@@ -1,3 +1,4 @@
+//Global Variables
 var getObj = [];
 var randArr = [];
 var randomQ = 0;
@@ -41,15 +42,18 @@ var category31 = "https://opentdb.com/api.php?amount=50&category=31";
 var category32 = "https://opentdb.com/api.php?amount=50&category=32";
 
 
-
+//OnLoad Function
 $(document).ready(function () {
+    //Opening splash screen fade in/out
     $(".splashScreen").fadeIn(1000).delay(2000);
     $(".logoSplash").fadeIn(2000).delay(1000);
     $(".logoSplash").fadeOut(1000).delay(1000);
+    //Selection Screen FadeIn and Category Selection
     $(".selectionScreen").delay(2000).fadeIn(2000);
     $(".playButton").on("mousedown", function () {
         $(this).css('box-shadow', '1px 5px 2px rgba(0, 0, 0, 0.4)');
     });
+    //On mouseup, fade out selection screen, fade in play screen and start timer
     $(".playButton").on("mouseup", function () {
         $(this).css('box-shadow', '5px 10px 5px rgba(0, 0, 0, 0.19)');
         $(".selectionScreen").fadeOut(1000).delay(1000);
@@ -61,7 +65,7 @@ $(document).ready(function () {
         intervalId = setInterval(countDown, 1000);
 
     }
-
+    //Countdown time function and calc
     function countDown() {
         seconds--;
         if (seconds < 0) {
@@ -105,12 +109,12 @@ $(document).ready(function () {
     runGame();
 
     function runGame() {
-
+        //new JSON request from TriviaDB
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 getObj = JSON.parse(this.responseText);
-
+                //randomize the questions and answers and push to arrays
                 randomize()
                 function randomize() {
                     while (shuffle < getObj.results.length) {
@@ -124,7 +128,7 @@ $(document).ready(function () {
 
                 // console.log(getObj.results[randArr[randArrCount]].type);
                 // console.log($('ul li').length);
-
+                //Display the correct number of answers, if a boolean, display 2 only
                 if (getObj.results[randArr[randArrCount]].type === "boolean") {
                     randomAnswerArrBoolean();
                     $(".answer3, .answer4").hide();
@@ -133,7 +137,7 @@ $(document).ready(function () {
                     $("li.answer3, li.answer4").show();
                 }
 
-
+                //truley randomizes answers by eliminating those already used
                 function randomAnswerArr() {
                     while (answerShuffle < $('ul li').length) {
                         randomLine = Math.floor((Math.random() * $('ul li').length) + 1);
@@ -143,7 +147,7 @@ $(document).ready(function () {
                         }
                     }
                 }
-
+                //same as above, but for only boolean answers
                 function randomAnswerArrBoolean() {
                     while (answerShuffle < 2) {
                         randomLine = Math.floor((Math.random() * 2) + 1);
@@ -156,7 +160,7 @@ $(document).ready(function () {
 
 
 
-
+                //gets random answer from array and displays in HTML
                 randomAnswerArr()
                 $(".wins").html(points);
                 $("#testID").html(getObj.results[randArr[randArrCount]].category);
@@ -171,6 +175,7 @@ $(document).ready(function () {
                     $(this).css('box-shadow', '1px 3px 0px rgba(0, 0, 0, 0.4)');
 
                 })
+                //HTML actions on click, displaying if the answer is correct or not on Click
                 $("li").on("mouseup", function () {
                     $(this).css('box-shadow', '2px 5px 3px rgba(0, 0, 0, 0.19)');
                     if ($(this).html() === getObj.results[randArr[randArrCount]].correct_answer) {
@@ -205,13 +210,12 @@ $(document).ready(function () {
                     answerArr = [];
                     randomLine = 0;
                 }
-
+                //reset game when player times out or gets through all 50 questions
                 function resetGame() {
                     var answerDelay = setTimeout(function () {
                         minutes = 4;
                         seconds = 61;
                     }, 1000)
-                    // clearTimeout(answerDelay);
                     $("li").off("click");
                     $("li").off("tap");
                     $("li").off("mousedown");
@@ -236,7 +240,7 @@ $(document).ready(function () {
 
 
 
-
+                //this is the end screen that appears after a player finishes the round
                 function newQuestion() {
 
                     if (randArrCount === 50) {
@@ -297,6 +301,7 @@ $(document).ready(function () {
             };
         }
         selectCategory();
+        //this function collects the correct category of questions and answers depending on how the player chooses
         function selectCategory() {
 
             $(".playbutton").on("click", function () {
