@@ -65,6 +65,33 @@ $(document).ready(function () {
         intervalId = setInterval(countDown, 1000);
 
     }
+
+    function resetGame() {
+        console.log("inside resetGame()")
+        var answerDelay = setTimeout(function () {
+            minutes = 4;
+            seconds = 61;
+        }, 1000)
+        $("li").off("click");
+        $("li").off("tap");
+        $("li").off("mousedown");
+        $("li").off("mouseup");
+        $(".playbutton").off("click");
+        getObj = [];
+        randArr = [];
+        randomQ = 0;
+        shuffle = 0;
+        randArrCount = 0;
+        answerShuffle = 0;
+        answerArr = [];
+        randomLine = 0;
+        points = 0;
+        questionsCount = 0;
+        console.log("wins: " + points + "questions left: " + questionsCount)
+        $(".wins").html(points + "/" + questionsCount);
+        categoryText = "";
+        selectCategory();
+    }
     //Countdown time function and calc
     function countDown() {
         seconds--;
@@ -100,7 +127,7 @@ $(document).ready(function () {
         }
 
         $(".timer").text(minutes + ":" + seconds);
-        console.log(minutes + ":" + seconds);
+        // console.log(minutes + ":" + seconds);
     }
 
 
@@ -210,31 +237,7 @@ $(document).ready(function () {
                     answerArr = [];
                     randomLine = 0;
                 }
-                //reset game when player times out or gets through all 50 questions
-                function resetGame() {
-                    var answerDelay = setTimeout(function () {
-                        minutes = 4;
-                        seconds = 61;
-                    }, 1000)
-                    $("li").off("click");
-                    $("li").off("tap");
-                    $("li").off("mousedown");
-                    $("li").off("mouseup");
-                    $(".playbutton").off("click");
-                    getObj = [];
-                    randArr = [];
-                    randomQ = 0;
-                    shuffle = 0;
-                    randArrCount = 0;
-                    answerShuffle = 0;
-                    answerArr = [];
-                    randomLine = 0;
-                    points = 0;
-                    $(".wins").html(points)
-                    questionsCount = 0;
-                    categoryText = "";
-                    selectCategory();
-                }
+                
 
 
 
@@ -300,6 +303,9 @@ $(document).ready(function () {
                 }
             };
         }
+
+        //reset game when player times out or gets through all 50 questions
+        
         selectCategory();
         //this function collects the correct category of questions and answers depending on how the player chooses
         function selectCategory() {
